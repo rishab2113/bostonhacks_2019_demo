@@ -62,6 +62,10 @@ class _HomePageState extends State<HomePage> {
       icon: Icon(Icons.shopping_basket),
       title: Text('Check out'),
     ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.cloud),
+      title: Text('Run Function'),
+    ),
   ];
 
   @override
