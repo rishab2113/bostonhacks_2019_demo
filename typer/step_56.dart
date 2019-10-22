@@ -18,7 +18,6 @@ import 'package:flutter_store/model/app_state_model.dart';
 import 'package:flutter_store/styles.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:cloud_functions/cloud_functions.dart';
 
 void main() {
   runApp(
@@ -117,24 +116,16 @@ class CloudFunctionPage extends StatefulWidget{
 
 class _CloudFunctionPageState extends State<CloudFunctionPage>{
 
-  String data = '';
-
   @override
   void initState(){
     super.initState();
-    CloudFunctions.instance.getHttpsCallable(functionName: 'helloWorld').call()
-    .then((onValue){
-      setState(() {
-        data = onValue.data;
-      });
-    });
   }
 
   @override
   Widget build(BuildContext context){
     return Scaffold(
       body: Center(
-        child: Text(data)
+        child: const Text('data')
       ),
     );
   }

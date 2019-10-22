@@ -218,5 +218,13 @@
     {
         "file": "lib/main.dart",
         "content": "typer/step_55.dart"
-    }
+    },
+    {
+        "file": "lib/main.dart",
+        "content": "typer/step_56.dart"
+    },
+    {
+        "file": "lib/main.dart",
+        "content": "typer/step_57.dart"
+    },
 ]
